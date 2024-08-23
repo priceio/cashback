@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cashback Calculator Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>
+            <img src="cashback.png" alt="Cashback Logo" class="logo">
+            Cashback Calculator
+        </h1>
+        <form id="spendingForm">
+            <div class="form-group">
+                <label for="shopping">Online Shopping:</label>
+                <div class="input-container">
+                    <span class="dollar-sign">$</span>
+                    <input type="number" id="shopping" placeholder="Enter amount" required>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label for="food">Food:</label>
+                <div class="input-container">
+                    <span class="dollar-sign">$</span>
+                    <input type="number" id="food" placeholder="Enter amount" required>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label for="groceries">Groceries:</label>
+                <div class="input-container">
+                    <span class="dollar-sign">$</span>
+                    <input type="number" id="groceries" placeholder="Enter amount" required>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label for="subscriptions">Subscriptions:</label>
+                <div class="input-container">
+                    <span class="dollar-sign">$</span>
+                    <input type="number" id="subscriptions" placeholder="Enter amount" required>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label for="utilities">Utilities:</label>
+                <div class="input-container">
+                    <span class="dollar-sign">$</span>
+                    <input type="number" id="utilities" placeholder="Enter amount" required>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label for="insurance">Insurance:</label>
+                <div class="input-container">
+                    <span class="dollar-sign">$</span>
+                    <input type="number" id="insurance" placeholder="Enter amount" required>
+                </div>
+            </div>
+            
+            <button type="submit">Calculate Cashback</button>
+        </form>
+        <div id="result" class="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

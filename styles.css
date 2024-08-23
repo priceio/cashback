@@ -1,0 +1,121 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #e0ffe0;
+    margin: 0;
+}
+
+.game-container {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 128, 0, 0.3);
+    max-width: 500px;
+    width: 90%;
+}
+
+.logo {
+    width: 50px;
+    height: auto;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+h1 {
+    color: #008000;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+label {
+    font-weight: bold;
+    color: #006400;
+    margin-bottom: 5px;
+}
+
+.input-container {
+    position: relative;
+    width: 100%;
+}
+
+.dollar-sign {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #008000;
+    font-size: 16px;
+}
+
+input[type="number"] {
+    padding: 10px 10px 10px 25px;
+    font-size: 16px;
+    border: 1px solid #008000;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button {
+    grid-column: span 3;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #32cd32;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #228b22;
+}
+
+.result {
+    margin-top: 20px;
+    font-size: 24px;
+    color: #006400;
+    font-weight: bold;
+    animation: flash 1s infinite alternate;
+}
+
+@keyframes flash {
+    from {
+        color: #006400;
+        transform: scale(1);
+    }
+    to {
+        color: #32cd32;
+        transform: scale(1.1);
+    }
+}
+
+@media (max-width: 600px) {
+    form {
+        grid-template-columns: 1fr;
+    }
+
+    button {
+        grid-column: span 1;
+    }
+}
